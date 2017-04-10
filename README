@@ -1,0 +1,36 @@
+CS6378 Project 1
+-----------------
+Author: Hsin-Hua Chen
+Date: 7/5/2016
+
+Files/Folders:
+1. src/: Source code folder
+         files: Project1.java, Node.java, ConfigReader.java, Message.java,
+		        SpanningTree.java, CLProtocol.java
+2. bin/: Class folder
+3. launcher.sh: Launch "Project1" on remote device according to config file
+4. Cleanup.sh: kill all processes on remote device according to config file
+5. Compile.sh: run compile script
+
+Compiling instructions:
+1. Let configuration file, launcher script, cleanup script, 
+   src folder, bin folder in the same directory.
+2. Run command "javac -d bin src/*" or simply run compile.sh it will create
+   Byte code in bin folder.
+
+Running instruction:
+1. Run launcher.sh with configuration file as parameter:
+        sh launcher.sh [Configuration File Name]
+2. To End program, Run cleanup.sh with config file as parameter:
+        sh cleanup.sh [Configuation File Name]
+
+Output:
+   After running the program, it will generate output files named 
+   "config-<nodeid>.out" which shows the timestamp of each snapshots.
+
+[TODO]
+1. implement save application message in queue.
+2. node 0 check consistency
+3. when testing, CL protocol seems can't run itself. Will provide null
+   pointer error.
+4. modify: implement  MAP protocol send message in class

@@ -1,0 +1,22 @@
+#
+# Configuration file for CS6378 Project #1
+# (Fall 2014)
+#
+# As per the "shell" convention, anything following a hash sign is
+# a comment and should be ignored by the parser.
+
+# Number of nodes
+5    	
+
+# Here we list the individual nodes
+# The node numbers are implicitly designated by order in the file.
+# ie, the first node listed is node 1, etc.
+#
+
+# Format is:
+# Hostname	Port	Token Path
+dc01		3332	3 2 4 5  # Note, the final "1" is implicit here
+dc33		5678	1 4 5 3	
+dc21		5231	1 4 2	
+dc33		2311	5 3 1 5  
+dc22		3124	1 2 3 4
